@@ -58,7 +58,6 @@
 .menu-inicio a{
   display: block;
   color: white;
-  height: 28px;
   text-decoration: none;
   padding: 2px 10px;
 }
@@ -174,3 +173,186 @@
 /* Fin de responsive design Desktops and Laptos (inicio)*/
 
 /* Fin del css para el inicio */
+
+
+
+
+
+/* Css para el estadio */
+
+/* Responsive design Celular (estadio)*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-estadio{
+  background-color: black;
+}
+
+.header-estadio {
+  width: 100%;
+  height: 50px;
+  color: #F30000;
+  margin-top: 20px;
+}
+
+.contenedor-estadio {
+  width: 100%;
+  margin: auto;
+}
+
+#menu-bar-estadio {
+  display: none;
+}
+
+#menu-bar-estadio:checked ~ .menu-estadio {
+  transform: translateX(0%);
+}
+
+.header-estadio label {
+  font-size: 8vw;
+  margin: 6px 10px;
+  cursor: pointer;
+}
+
+.header-estadio .contenedor-estadio{
+  display: table;
+}
+
+.menu-estadio {
+  position: absolute;
+  top: 15vw;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+  background-color: rgba(100, 0, 0, 0.1);
+}
+
+.menu-estadio a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 2px 10px;
+}
+
+.menu-estadio a:hover{
+  background-color: inherit;
+  color: red;
+}
+
+
+/* Fin de responsive design Celular (estadio)*/
+
+/* Responsive design Desktops and Laptops (estadio)*/
+
+@media only screen and (min-width:1000px) {
+
+  #menu-bar-estadio {
+    display: none;
+  }
+
+  .header-estadio{
+    margin-top: 40px;
+  }
+
+  .header-estadio label {
+    display: none;
+  }
+
+  .menu-estadio{
+    position: static;
+    transform: translateX(0%);
+    display: flex;
+    background-color: inherit;
+  }
+
+  .menu-estadio li{
+    float: left;
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .menu-estadio a{
+    font-size: 1.5vw;
+    width: auto;
+    height: auto;
+    border: none;
+  }
+
+  .menu-estadio a:hover{
+    background-color: inherit;
+    color: red;
+  }
+
+  .span-estadio {
+    color: red;
+  }
+
+  .body-estadio img{
+    width: 35%;
+    height: 20vw;
+    padding: 1vw;
+  }
+
+  .estadio-1{
+    padding-top: 4vw;
+    overflow: hidden;
+  }
+
+  .estadio-2{
+    overflow: hidden;
+  }
+
+  .estadio-3{
+    overflow: hidden;
+  }
+
+  .estadio-4{
+    overflow: hidden;
+  }
+
+  #img-izq{
+    float: left;
+  }
+
+  #img-der{
+    float: right;
+  }
+
+  #img-cen{
+    float: left;
+  }
+
+  #par-cen{
+    color: white;
+    width: 25%;
+    float: left;
+    padding: 0.6vw 0.2vw;
+    font-size: 1.6vw;
+  }
+
+  #par-izq{
+    color: white;
+    width: 30%;
+    float: left;
+    padding: 1vw;
+    font-size: 1.6vw;
+  }
+
+  #par-der{
+    color: white;
+    width: 30%;
+    float: right;
+    padding: 0.2vw;
+    font-size: 1.6vw;
+  }
+
+}
+
+/* Fin de responsive design Desktops and Laptos (estadio)*/
+
+/* Fin del css para el estadio */
